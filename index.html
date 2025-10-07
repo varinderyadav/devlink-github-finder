@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevLink - GitHub Profile Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>DevLink 🔍</h1>
+      <p>Find and explore GitHub developer profiles</p>
+    </header>
+
+    <section class="search-section">
+      <input type="text" id="usernameInput" placeholder="Enter GitHub username" />
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="loading" class="hidden">Loading...</section>
+
+    <section id="error" class="hidden"></section>
+
+    <section id="profile" class="hidden">
+      <div class="profile-card">
+        <img id="avatar" src="" alt="Avatar" />
+        <div class="profile-info">
+          <h2 id="name"></h2>
+          <p id="bio"></p>
+          <p id="followers"></p>
+          <p id="following"></p>
+          <p id="publicRepos"></p>
+        </div>
+      </div>
+
+      <div class="repos">
+        <h3>Top Repositories</h3>
+        <ul id="repoList"></ul>
+      </div>
+    </section>
+
+    <footer>
+      Built by Varinder Yadav • <a href="https://github.com/varinderyadav" target="_blank">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
